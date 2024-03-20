@@ -105,12 +105,13 @@ function validationImc(){
             </View>
             }
             <FlatList
+            showsVerticalScrollIndicator={false}
             style={styles.listImcs}
             data={imcList.reverse()}
             renderItem={({item}) =>{
                 return(
                     <Text style={styles.resultImcItem}>
-                    <Text style={styles.textResultItemList}>Resultado IMC = {item.imc}</Text>
+                     <Text style={styles.textResultItemList}>Resultado IMC = {item.imc}</Text>
                     </Text>
                 )
             }}
